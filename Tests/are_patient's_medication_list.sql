@@ -1,0 +1,14 @@
+SET SQL_SAFE_UPDATES = 0;
+set foreign_key_checks=0;
+DELETE FROM Treatment;
+DELETE FROM Treats;
+INSERT INTO Treatment (ICD_10_PCS, name) VALUES ('050K0ZZ', 'Asprin');
+INSERT INTO Treatment (ICD_10_PCS, name) VALUES ('051K0ZZ', 'Ibuprofen');
+INSERT INTO Treats (ICD_10_PCS, PID, Date_time) VALUES ('050K0ZZ', 1, '2018-03-04 10:00:00');
+INSERT INTO Treats (ICD_10_PCS, PID, Date_time) VALUES ('051K0ZZ', 2, '2017-02-04 10:00:00');
+INSERT INTO Treats (ICD_10_PCS, PID, Date_time) VALUES ('051K0ZZ', 3, '2018-02-04 11:00:00');
+INSERT INTO Treats (ICD_10_PCS, PID, Date_time) VALUES ('050K0ZZ', 1, '2018-05-14 14:00:00');
+INSERT INTO Treats (ICD_10_PCS, PID, Date_time) VALUES ('051K0ZZ', 2, '2017-02-04 11:00:00');
+INSERT INTO Treats (ICD_10_PCS, PID, Date_time) VALUES ('051K0ZZ', 2, '2017-02-04 13:00:00');
+SET foreign_key_checks=1;
+SET SQL_SAFE_UPDATES = 1;
